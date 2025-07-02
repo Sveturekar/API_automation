@@ -13,8 +13,7 @@
     <scope>test</scope>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/com.github.java-json-tools/json-schema-validator -->
-<!-- https://mvnrepository.com/artifact/b-social/jason --><!-- https://mvnrepository.com/artifact/jason/jason -->
+ 
 
 <dependency>
     <groupId>com.github.java-json-tools</groupId>

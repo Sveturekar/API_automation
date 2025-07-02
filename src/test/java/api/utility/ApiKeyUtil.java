@@ -14,5 +14,5 @@ public class ApiKeyUtil
 	                .baseUri(BASE_URL)
 	                .header(HEADER_NAME, API_KEY);
 	    }
-
+   
 }

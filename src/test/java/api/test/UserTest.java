@@ -88,8 +88,9 @@ retryResponse.then().log().all();
 	}
 	
 	@Test(priority=3)
-	public void UpdateUser()
+	public void UpdateUser() throws InterruptedException
 	{
+		Thread.sleep(5000);
 		test = extent.createTest("Update User Test");
 		userPayload.setFirstName(faker.name().firstName());
 		userPayload.setLastname(faker.name().lastName());
@@ -115,8 +116,10 @@ retryResponse.then().log().all();
 		
 	}
 	@Test(priority=5)
-	public void testUserDetailsWithUtil() 
-{Response response = ApiKeyUtil.withApiKey()
+	public void testUserDetailsWithUtil() throws InterruptedException 
+{
+		Thread.sleep(5000);
+		Response response = ApiKeyUtil.withApiKey()
 		            .when()
 		            .get("/user/123");
 
